@@ -65,12 +65,15 @@ button {
     text-align: left;
 }
 
-.ver-center {
+.table-cell {
     display: table-cell;
+}
+
+.center {
     vertical-align: middle;
 }
 
-.ver-center-container {
+.table {
     display: table;
 }
 
@@ -187,6 +190,14 @@ main li {
     width:150px;
     height:150px;
     margin: 0px 25px;
+}
+
+/* ASDLKFJASKLDJFASDLKF */
+.pic {
+    width:150px;
+    height:150px;
+    margin: 0px 25px;
+    
 }
 
 @media all and (max-width: 640px){
