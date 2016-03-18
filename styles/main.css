@@ -1,0 +1,280 @@
+/* ELEMENT STYLING */
+
+* {
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+html, body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    list-style-position: inside;
+    overflow:auto;
+}
+
+/* HELPER CLASSES */
+body {
+    position: fixed;
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+}
+
+body.shift {
+    -webkit-transform: translate(200px, 0);
+    transform: translate(200px, 0);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    display: inline;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+button {
+    outline: 0;
+    background: none;
+    border: 0;
+}
+
+.current-page {
+    color: black;
+    font-weight: bold
+}
+
+.hor-center {
+    max-width:960px;
+    margin:0 auto;
+    text-align: left;
+}
+
+.ver-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ver-center-container {
+    display: table;
+}
+
+.margins {
+    margin: 0px 25px;
+    
+}
+
+.body-shift {
+    left: 200px;
+}
+
+.menu-shift {
+    left: 0px;   
+}
+
+/* HEADER */
+.logo-container {
+    text-align: center;
+    /* center text vertically */
+    height: 140px;   
+    line-height: 140px;
+}
+
+.hamburger-container {
+    display: none;
+    float: left;
+    
+    /* vertical center somehow */
+    height: 75px;  
+    line-height: 75px;
+    
+    margin: 0px 15px;
+    
+}
+
+.hamburger-container:hover {
+    color: black;
+    
+    /* underline when hovering */
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
+/* NAV */
+nav {
+    /* bottom borders */
+    border-color: #e8e8e8;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+nav ul {
+    text-align: center;
+    /* Removes bullet points */
+    list-style: none;
+    
+    /* Removes space between li's */
+    font-size: 0px;
+}
+
+nav li {
+    font-size: 16px;
+    text-transform: uppercase;
+    
+    /* center text vertically */
+    height: 50px;
+    line-height: 50px;
+    
+    /* make navigation horizontal */
+    display: inline-block;
+}
+
+nav li a {
+    /* makes text take up full height */
+    display: block;
+    color: #808080;
+    
+    padding-left: 20px;  
+    padding-right: 20px;  
+    
+}
+
+nav li a:hover {
+    color: black;
+    
+    /* underline when hovering */
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
+.navigation {
+    display: none;
+    color: black;
+}
+
+/* MAIN */
+main {
+    padding-top: 100px;
+}
+
+main li {
+    margin-left: 25px;   
+}
+
+/* INDEX */
+.pic-container {
+    width: 210px;
+}
+
+.pic-container img {
+    width:150px;
+    height:150px;
+    margin: 0px 25px;
+}
+
+@media all and (max-width: 640px){
+    h1 {
+        font-size: 30px;   
+    }
+    
+    
+    /* HEADER */
+    
+    header {
+        border-color: #e8e8e8;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;   
+    }
+    
+    .hamburger-container {
+        /* make the button visible */
+        display: inherit;
+    }
+    
+    .logo-container {    
+        text-align: center;
+        /* center text vertically */
+        height: 75px;  
+        line-height: 75px;
+    }
+    
+    
+    /* NAV */
+    nav {
+        /* takes out nav and puts it off-screen */
+        position: fixed;
+        top: 0px;
+        left: -200px;
+        
+        /* set dimensions */
+        height:inherit;
+        width: 200px;
+        
+        /* Turn off bottom border, turn on right */
+        border-width: 0px 1px 0px 0px;
+        
+    }
+
+    nav.shift {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    nav li {
+        /* Make menu vertical */
+        display: block;
+    }
+
+    nav li a:hover {
+        /* Turn off bottom border on hover */
+        border-style: none;
+    }
+    
+    .navigation {
+        display: inherit; 
+        height: 75px;
+        
+        background: #e8e8e8;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-transform: uppercase;
+
+        /* bottom border */
+        border-color: #e8e8e8;
+        border-style: solid;
+        border-width: 0px 0px 1px 0px;
+        
+        /* center text vertically */
+        line-height: 75px;
+    }
+    
+    /* INDEX */
+    .pic-container {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .desc {
+        display: block;
+    }
+    
+}
