@@ -2,53 +2,89 @@
 <html>
     <head>
         <title>Home</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
         
-        <link rel='stylesheet' href='styles/main.css'/>
-        <link rel='stylesheet' media='screen and (min-width: 641px)' href='styles/wide.css' />
-        <link rel='stylesheet' media='screen and (max-width: 640px)' href='styles/narrow.css' />
         
+        
+        <script src="https://code.jquery.com/jquery.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- jPushMenu -->
+        <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+        
+        <link rel='stylesheet' href='styles/main.css'/>
     </head>
     <body>
-        
-        <header>
-            <div class="hamburger-container table">
-                <button class="table-cell">
-                    <img src="images/hamburger.png" alt="menu">
-                </button>
+        <!-- slide in menu -->
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+            <div id="mobile-nav">
+                <h3>Navigation</h3>
             </div>
-            <div class="logo-container">
-                <h1>John Fang</h1>
-            </div>
-        </header> 
-        
-        <nav class="hor-center">
-            <p class="navigation">Navigation</p>
-            <ul>
-                <li><a href="index.html" class="current-page">About</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html" class="current-page">About</a>
+            <a href="education.html">Education</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </nav>
         
-        <main class="hor-center">
-            <div class="margins table">
-                <div class="pic-container">
-                    <img src="images/pic.png" alt="Profile picture">
+        <!-- page -->
+        <div class="container">  
+            <div id="logo-container" class="row">
+                <button type="button" id="nav-button" class="toggle-menu menu-left push-body">
+                    <span>&#9776;</span>
+                </button>
+                <div class="span12">
+                    <h1 id="logo">John Fang</h1>
                 </div>
-                <div class="desc table-cell center">
+            </div>
+          
+            <div id="nav-container" class="row">
+                <div class="span12 centered-pills">
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html" class="current-page">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content-container" class="row">
+                <div class="col-sm-3 pic-container">
+                    <img class="pic" src="images/pic.png" alt="Profile picture">
+                </div>
+                <div class="col-sm-9">
                     <p>Hi, I'm John.</p>
                     <br>
                     <p>I am a 1st year student at the University of Texas at Austin, where I plan to earn a bachelor's degree in computer science and mathematics. I am also a member of the Turing Scholars, the computer science honors program at UT-Austin. </p>
+                    <br>
+                    <p>I have set up this website to provide information about myself. It is still under construction, so some links may not work yet. </p>
                 </div>
             </div>
-        </main>
+        </div>
+        
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="scripts/main.js"></script>
+        <!--load jQuery, required-->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        
+        <!--load jPushMenu, required-->
+        <script src="js/jPushMenu.js"></script>
+
+        <!--call jPushMenu, required-->
+        <script>
+        jQuery(document).ready(function($) {
+            $('.toggle-menu').jPushMenu();
+        });
+        </script>
     </body>
 </html>
