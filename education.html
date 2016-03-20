@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>John Fang — Education</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+                
+        <script src="https://code.jquery.com/jquery.js"></script>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- jPushMenu -->
+        <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+        
+        <link rel='stylesheet' href='css/main.css'/>
+    </head>
+    <body>
+        <!-- slide in menu -->
+        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+            <div id="mobile-nav">
+                <h3>Navigation</h3>
+            </div>
+            <a href="index.html" class="current-page">About</a>
+            <a href="education.html">Education</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <!-- page -->
+        <div class="container">  
+            <div id="logo-container" class="row">
+                <button type="button" id="nav-button" class="toggle-menu menu-left push-body">
+                    <span>&#9776;</span>
+                </button>
+                <div class="span12">
+                    <h1 id="logo">John Fang</h1>
+                </div>
+            </div>
+          
+            <div id="nav-container" class="row">
+                <div class="span12 centered-pills">
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="education.html" class="current-page">Education</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content-container">
+                <div class="row">
+                    <div class="col-sm-3 pic-container">
+                        <img class="pic" src="images/ut%20austin.png" alt="UT Austin Logo">
+                    </div>
+                    <div class="col-sm-9">
+                        <h2>The University of Texas at Austin</h2>
+                        <p style="padding-top: .4em">BS Computer Science, Turing Scholars Honors</p>
+                        <p>Class of 2019</p>
+                        <p>GPA: 4.00</p>
+                        <p>Relevant Coursework:</p>
+                        <ul class="list" style="padding-top: .2em">
+                            <li>Computer Architecture (Honors)</li>
+                            <li>Data Structures (Honors)</li>
+                            <li>Systems Security</li>
+                            <li>Linear Algebra (Honors)</li>
+                            <li>Vector Calculus (Honors)</li>
+                            <li>Discrete Math (Honors)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 pic-container">
+                        <img class="pic" src="images/ncssm.png" alt="NCSSM Logo">
+                    </div>
+                    <div class="col-sm-9">
+                        <h2>North Carolina School of Science and Math</h2>
+                        <p style="padding-top: .4em">High School Diploma</p>
+                        <p>Class of 2015</p>
+                        <p>GPA: 5.667</p>
+                        <p>Relevant Coursework:</p>
+                        <ul class="list" style="padding-top: .2em">
+                            <li>AP Computer Science</li>
+                            <li>Advanced Programming</li>
+                            <li>Data Structures I</li>
+                            <li>Modeling and Differential Equations</li>
+                            <li>Multivariable Calculus</li>
+                            <li>Combinatorics and Game Theory</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <!--load jQuery, required-->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        
+        <!--load jPushMenu, required-->
+        <script src="js/jPushMenu.js"></script>
+
+        <!--call jPushMenu, required-->
+        <script>
+        jQuery(document).ready(function($) {
+            $('.toggle-menu').jPushMenu();
+        });
+        </script>
+    </body>
+</html>
