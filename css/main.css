@@ -73,7 +73,6 @@ button{
     border-width: 1px 0px 1px 0px;   
 }
 #nav-container li a {    
-    height: 49px;
     padding-top: 0px;
     padding-bottom: 0px;
     
@@ -88,10 +87,16 @@ button{
 #nav-container li a:hover, 
 #nav-container li a:focus {
     background-color: transparent;
-    color: black;
-    border-color: black;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px; 
+    color: #404040;
+}
+#nav-container li a.current-page{
+    color: #4682b4;
+    
+}
+#nav-container li a.current-page:hover, 
+#nav-container li a.current-page:focus {
+    color: #4682b4;
+    border-style: none;
 }
 .centered-pills {
     height: 50px;

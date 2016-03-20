@@ -28,11 +28,6 @@
     display: block;
     padding-left: 19px;
     color: #808080;
-    /* transparent border */
-    border-color: white;
-    border-style: solid;
-    border-width: 0px 0px 0px 1px;
-    
     
     /* vertical center */
     height: 50px;
@@ -40,9 +35,17 @@
 }
 
 .cbp-spmenu a:hover {
-    color: black;
-    border-color: black;
+    color: #404040 ;
     text-decoration: none;
+}
+
+.cbp-spmenu a.current-page {
+    color: #4682b4;
+}
+
+.cbp-spmenu a.current-page:hover {
+    color: #4682b4;
+    border-color: transparent;
 }
 
 /* Orientation-dependent styles for the content of the menu */
