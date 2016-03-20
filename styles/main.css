@@ -52,6 +52,7 @@ button{
 /* HEADER */
 #logo-container {
     height: 140px;
+    background-color: red;
 }
 #logo-container div {
     /* horizontal center */
